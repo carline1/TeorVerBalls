@@ -52,7 +52,7 @@ namespace TeorVerBalls2
             images1[n1].Top = t1;  
 
             // рандомим следующий шар и запоминаем его исходную позицию
-            n1 = rnd.Next(0, 8);
+            n1 = rnd.Next(0, 9);
             l1 = images1[n1].Left;
             t1 = images1[n1].Top;
             images1[n1].Left = 465;
@@ -74,7 +74,7 @@ namespace TeorVerBalls2
             images2[n2].Left = l2;
             images2[n2].Top = t2;
 
-            n2 = rnd.Next(0, 8);
+            n2 = rnd.Next(0, 9);
             l2 = images2[n2].Left;
             t2 = images2[n2].Top;
             images2[n2].Left = 571;

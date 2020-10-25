@@ -38,7 +38,7 @@ namespace TeorVerBalls
             images[n].Left = l;
             images[n].Top = t;
 
-            n = rnd.Next(0, 8);
+            n = rnd.Next(0, 9);
             l = images[n].Left;
             t = images[n].Top;
             images[n].Left = 473;

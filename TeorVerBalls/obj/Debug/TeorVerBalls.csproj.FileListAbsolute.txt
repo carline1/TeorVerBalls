@@ -8,3 +8,13 @@ C:\Users\Светлана\source\repos\TeorVerBalls\obj\Debug\TeorVerBalls.cspro
 C:\Users\Светлана\source\repos\TeorVerBalls\obj\Debug\TeorVerBalls.csproj.CoreCompileInputs.cache
 C:\Users\Светлана\source\repos\TeorVerBalls\obj\Debug\TeorVerBalls.exe
 C:\Users\Светлана\source\repos\TeorVerBalls\obj\Debug\TeorVerBalls.pdb
+D:\Desktop\GitHub\TeorVerBalls\TeorVerBalls\bin\Debug\TeorVerBalls.exe.config
+D:\Desktop\GitHub\TeorVerBalls\TeorVerBalls\bin\Debug\TeorVerBalls.exe
+D:\Desktop\GitHub\TeorVerBalls\TeorVerBalls\bin\Debug\TeorVerBalls.pdb
+D:\Desktop\GitHub\TeorVerBalls\TeorVerBalls\obj\Debug\TeorVerBalls.csprojAssemblyReference.cache
+D:\Desktop\GitHub\TeorVerBalls\TeorVerBalls\obj\Debug\TeorVerBalls.Form1.resources
+D:\Desktop\GitHub\TeorVerBalls\TeorVerBalls\obj\Debug\TeorVerBalls.Properties.Resources.resources
+D:\Desktop\GitHub\TeorVerBalls\TeorVerBalls\obj\Debug\TeorVerBalls.csproj.GenerateResource.cache
+D:\Desktop\GitHub\TeorVerBalls\TeorVerBalls\obj\Debug\TeorVerBalls.csproj.CoreCompileInputs.cache
+D:\Desktop\GitHub\TeorVerBalls\TeorVerBalls\obj\Debug\TeorVerBalls.exe
+D:\Desktop\GitHub\TeorVerBalls\TeorVerBalls\obj\Debug\TeorVerBalls.pdb
