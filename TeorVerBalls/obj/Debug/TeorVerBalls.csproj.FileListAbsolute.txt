@@ -1,0 +1,10 @@
+C:\Users\Светлана\source\repos\TeorVerBalls\bin\Debug\TeorVerBalls.exe.config
+C:\Users\Светлана\source\repos\TeorVerBalls\bin\Debug\TeorVerBalls.exe
+C:\Users\Светлана\source\repos\TeorVerBalls\bin\Debug\TeorVerBalls.pdb
+C:\Users\Светлана\source\repos\TeorVerBalls\obj\Debug\TeorVerBalls.csprojAssemblyReference.cache
+C:\Users\Светлана\source\repos\TeorVerBalls\obj\Debug\TeorVerBalls.Form1.resources
+C:\Users\Светлана\source\repos\TeorVerBalls\obj\Debug\TeorVerBalls.Properties.Resources.resources
+C:\Users\Светлана\source\repos\TeorVerBalls\obj\Debug\TeorVerBalls.csproj.GenerateResource.cache
+C:\Users\Светлана\source\repos\TeorVerBalls\obj\Debug\TeorVerBalls.csproj.CoreCompileInputs.cache
+C:\Users\Светлана\source\repos\TeorVerBalls\obj\Debug\TeorVerBalls.exe
+C:\Users\Светлана\source\repos\TeorVerBalls\obj\Debug\TeorVerBalls.pdb
