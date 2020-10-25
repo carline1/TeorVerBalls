@@ -52,7 +52,7 @@ namespace TeorVerBalls2
             n1 = rnd.Next(0, 8);
             l1 = images1[n1].Left;
             t1 = images1[n1].Top;
-            images1[n1].Left = 479;
+            images1[n1].Left = 465;
             images1[n1].Top = 407;
 
 
@@ -74,7 +74,7 @@ namespace TeorVerBalls2
             n2 = rnd.Next(0, 8);
             l2 = images2[n2].Left;
             t2 = images2[n2].Top;
-            images2[n2].Left = 585;
+            images2[n2].Left = 571;
             images2[n2].Top = 407;
         }
     }
