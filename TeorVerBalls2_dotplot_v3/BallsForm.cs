@@ -143,7 +143,7 @@ namespace TeorVerBalls2
                 error_msg2.Visible = true;
             else if (bar_value.Text == "-")
                 { }
-            else if (Int32.Parse(bar_value.Text) < 0)
+            else if ((Int32.Parse(bar_value.Text) < 0) || (Int32.Parse(bar_value.Text) > Int32.Parse(iterations.Text)))
                 error_msg2.Visible = true;
             else
             {
@@ -171,7 +171,6 @@ namespace TeorVerBalls2
                 else
                     balls[i] = 0;
             }
-            error_msg.Visible = false;
 
             if (trackBar1.Value >= past_pos_trackbar)
                 new_pos_trackbar = trackBar1.Value - past_pos_trackbar;
@@ -193,7 +192,7 @@ namespace TeorVerBalls2
                     images[i].Top = 0;
                 }
 
-                // Вытаскиваем шары
+                // Вытаскиваем шары из первой коробки
                 n1 = balls[rnd.Next(0, 9)];
                 if (n1 == 0)
                 {
@@ -206,6 +205,7 @@ namespace TeorVerBalls2
                     left_black.Top = 348;
                 }
 
+                // Вытаскиваем шары из второй коробки
                 n2 = balls[rnd.Next(0, 9)];
                 if (n2 == 0)
                 {
@@ -218,32 +218,31 @@ namespace TeorVerBalls2
                     right_black.Top = 348;
                 }
 
-                pred = (double)ww / (double)tests;
-                predict.Text = "P(ww) = " + pred.ToString("F6");
-
                 // меняем таблички-счетчики
                 if (n1 == 0 & n2 == 0)
                 {
                     ww++;
                     label1.Text = "Белый белый: " + ww;
-                    // График
-                    chart1.Series["ww"].Points.AddXY(1, nextLocate_ww);
+                    chart1.Series["ww"].Points.AddXY(1, nextLocate_ww);  // График
                     nextLocate_ww++;
                 }
                 else if ((n1 == 0 & n2 == 1) | (n1 == 1 & n2 == 0))
                 {
                     wb++;
                     label2.Text = "Белый черный: " + wb;
-                    chart1.Series["wb"].Points.AddXY(2, nextLocate_wb);
+                    chart1.Series["wb"].Points.AddXY(2, nextLocate_wb);  // График
                     nextLocate_wb++;
                 }
                 else if (n1 == 1 & n2 == 1)
                 {
                     bb++;
                     label3.Text = "Черный черный: " + bb;
-                    chart1.Series["bb"].Points.AddXY(3, nextLocate_bb);
+                    chart1.Series["bb"].Points.AddXY(3, nextLocate_bb);  // График
                     nextLocate_bb++;
                 }
+
+                pred = (double)ww / (double)tests;
+                predict.Text = "P(ww) = " + pred.ToString("F6");
             }
             past_pos_trackbar = trackBar1.Value;
         }
