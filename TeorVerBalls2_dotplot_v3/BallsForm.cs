@@ -74,7 +74,7 @@ namespace TeorVerBalls2
             label1.Text = "Белый белый: " + ww;
             label2.Text = "Белый черный: " + wb;
             label3.Text = "Черный черный: " + bb;
-            predict.Text = "P(ww) = " + 0;
+            predict.Text = "Ѡ(ww) = " + 0;
 
             chart1.Series["ww"].Points.Clear();
             chart1.Series["wb"].Points.Clear();
@@ -242,7 +242,7 @@ namespace TeorVerBalls2
                 }
 
                 pred = (double)ww / (double)tests;
-                predict.Text = "P(ww) = " + pred.ToString("F6");
+                predict.Text = "Ѡ(ww) = " + pred.ToString("F6");
             }
             past_pos_trackbar = trackBar1.Value;
         }

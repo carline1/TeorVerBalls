@@ -214,9 +214,9 @@
             this.predict.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.predict.Location = new System.Drawing.Point(83, 232);
             this.predict.Name = "predict";
-            this.predict.Size = new System.Drawing.Size(93, 24);
+            this.predict.Size = new System.Drawing.Size(103, 24);
             this.predict.TabIndex = 2;
-            this.predict.Text = "P(ww) = 0";
+            this.predict.Text = "Ѡ(ww) = 0";
             // 
             // error_msg
             // 
