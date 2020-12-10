@@ -52,6 +52,7 @@
             this.trackBar1 = new System.Windows.Forms.TrackBar();
             this.bar_value = new System.Windows.Forms.TextBox();
             this.error_msg2 = new System.Windows.Forms.Label();
+            this.probability = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.left_white)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.right_white)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.right_black)).BeginInit();
@@ -282,6 +283,16 @@
             this.error_msg2.Text = "Ошибка!";
             this.error_msg2.Visible = false;
             // 
+            // probability
+            // 
+            this.probability.AutoSize = true;
+            this.probability.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.probability.Location = new System.Drawing.Point(83, 277);
+            this.probability.Name = "probability";
+            this.probability.Size = new System.Drawing.Size(93, 24);
+            this.probability.TabIndex = 2;
+            this.probability.Text = "P(ww) = 0";
+            // 
             // BallsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -296,6 +307,7 @@
             this.Controls.Add(this.error_msg);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.chart1);
+            this.Controls.Add(this.probability);
             this.Controls.Add(this.predict);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
@@ -338,6 +350,7 @@
         private System.Windows.Forms.TrackBar trackBar1;
         private System.Windows.Forms.TextBox bar_value;
         private System.Windows.Forms.Label error_msg2;
+        private System.Windows.Forms.Label probability;
     }
 }
 

@@ -13,24 +13,6 @@ namespace TeorVerBalls2
     public partial class BallsForm : Form
     {
         Random rnd = new Random();
-        public BallsForm()
-        {
-            InitializeComponent();
-            PictureBox[] images = new PictureBox[]
-            {
-                left_black,
-                left_white,
-                right_black,
-                right_white
-            };
-
-            // возращаем все шары на за экран
-            for (int i = 0; i < images.Length; i++)
-            {
-                images[i].Left = -100;
-                images[i].Top = 0;
-            }
-        }
 
         int ww = 0;  // кол-во комбинаций белый белый
         int wb = 0;  // кол-во комбинаций белый черный
@@ -51,6 +33,31 @@ namespace TeorVerBalls2
 
         int past_pos_trackbar = 0;  // прошлая позиция трекбара - нужно чтобы продолжалась старая цепочка испытаний, а не создавалась новая
         int new_pos_trackbar;  // кол-во испытаний, который нужно прибавить
+
+        public BallsForm(SetForm set_form)
+        {
+            InitializeComponent();
+            PictureBox[] images = new PictureBox[]
+            {
+                left_black,
+                left_white,
+                right_black,
+                right_white
+            };
+
+            // возращаем все шары на за экран
+            for (int i = 0; i < images.Length; i++)
+            {
+                images[i].Left = -100;
+                images[i].Top = 0;
+            }
+
+            quant_balls = Int32.Parse(set_form.quant_balls.Text);
+            quant_black = Int32.Parse(set_form.quant_black.Text);
+            // Вероятность выпадения ww 
+            double prop = Math.Pow((double)(quant_balls - quant_black) / (double)quant_balls, 2);
+            probability.Text = $"P(ww) = {prop:F6}";
+        }
 
         private void CloseButton_Clic(object sender, EventArgs e)
         {

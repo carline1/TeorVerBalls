@@ -27,9 +27,7 @@ namespace TeorVerBalls2
             else
             {
                 error_msg.Visible = false;
-                BallsForm ballsform = new BallsForm();
-                ballsform.quant_balls = Int32.Parse(quant_balls.Text);
-                ballsform.quant_black = Int32.Parse(quant_black.Text);
+                BallsForm ballsform = new BallsForm(this);
                 this.Hide();
                 ballsform.Show();
             }
